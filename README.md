@@ -27,7 +27,7 @@
 ## Installation
 If you are working with anaconda you can use the following comands to install datalib:
 
-`conda install git
+`conda install git\\
 pip install git+https://github.com/Iruzu/datalib.git`
 
 ## Usage
