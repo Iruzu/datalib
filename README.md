@@ -25,9 +25,10 @@
 - numpy >=1.17.2
 
 ## Installation
-To install datalib, run the following command:
+If you are working with anaconda you can use the following comands to install datalib:
 
-`pip install datalib`
+`conda install git`
+`pip install git+https://github.com/Iruzu/datalib.git`
 
 ## Usage
 To use datalib, run the following command:
