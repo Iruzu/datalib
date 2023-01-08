@@ -34,9 +34,9 @@ def test_all():
     metrics.calc_metrics(cont_matrix)
     
     # correlation
-    correlation.correlation(categorical_df)
-    correlation.correlation(permutation_df)
-    correlation.correlation(cont_df)
+    correlation(categorical_df)
+    correlation(permutation_df)
+    correlation(cont_df)
     
     # filtering
     test = metrics.calc_metrics(permutation_df)
@@ -44,8 +44,8 @@ def test_all():
     filtering.filter_condition_list (test, condition_list)
     
     #feature_scaling
-    feature_scaling.feature_scaling(permutation_df,"normalize")
-    feature_scaling.feature_scaling(permutation_df,"satandarize")
+    feature_scaling(permutation_df,"normalize")
+    feature_scaling(permutation_df,"satandarize")
     
     #plotting
     TPR=[1.0, 1.0, 1.0, 0.8, 0.8, 0.6, 0.6, 0.6, 0.4, 0.2]
