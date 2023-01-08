@@ -116,11 +116,7 @@ def discretizeEF(x, num_bins):
         freq = round(len(x)/num_bins)
         cut_ind=range(freq,len(x),freq)
         cut_pt = ordered[cut_ind]
-
-        if len(cut_pt)==1:   
-            print("No hay partición")
-            return(list(rep("I1",len(x)),np.nan))
-
+        
         categorical = discretize_generic (x, cut_pt)
         return(categorical, cut_pt)
     
